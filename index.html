@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+<title> Say Thanks to birthday wishes on Facebook </title>
+<link rel="stylesheet" href="bootstrap.min.css" />
+<script src="jquery.min.js"></script>
+<script src="wish.js"></script>
+<style>
+.container{
+	background: #fff;
+	padding: 20px;
+
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Say Thanks to birthday wishes on Facebook</h1>
+<hr/>
+	<h3>Get access code</h3>
+	<ol>
+		<li>Go to <a href="http://developers.facebook.com"> developers.facebook.com</a>.</li>
+		<li>Under Tools in the menu, go to Graph explorer.</li>
+		<li>Click on Get Access Token. Paste the token here</li>
+	</ol>
+	<hr>
+	<form id="form" onsubmit="return false;">
+		<textarea placeholder="Access Token" name="access_token"></textarea><br>
+		<input type="date" id="date" name="date"> Your Birthday<br>
+		<hr>
+		<h3> Choose Message </h3>
+		<input type="radio" name="message" value="Thanks" checked="true"> Thanks<br>
+		<input type="radio" name="message" value="Thanks :)"> Thanks :)<br>
+		<input type="radio" name="message" value="Thanks RePlAcE"> Thanks &lt;first name&gt;<br>
+		<input type="radio" name="message" value="Thanks RePlAcE :)"> Thanks &lt;first name&gt; :)<br>
+		<input type="radio" name="message" value="Thanks RePlAcE rEpLaCe"> Thanks &lt;first name&gt; &lt;last name&gt;<br>
+		<input type="radio" name="message" value="Thanks RePlAcE rEpLaCe :)"> Thanks &lt;first name&gt; &lt;last name&gt; :)<br>
+		<hr>
+		<div class="alert"></div>
+		<button class="btn btn-primary" onclick="wish()">Say Thanks</button>
+	</form>
+	<i> If you have any queries, comment here: <a href="http://lifepluslinux.blogspot.in/2014/05/say-thanks-to-birthday-wishes-on.html">lifepluslinux.blogspot.in</a> </i><br>
+	NOTE: We <b>do not</b> save any of your credentials. Don't believe me? See the <a href="https://github.com/alseambusher/alseambusher.github.com/tree/master/say-thanks">source</a> :P
+</div>
+</body>
+</html>

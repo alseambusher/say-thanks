@@ -1,2 +1,2 @@
 # say-thanks
-Say thanks to people who which you on your birthday
+Say thanks to people who wish you on your birthday on Facebook
